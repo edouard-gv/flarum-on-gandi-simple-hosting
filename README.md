@@ -30,7 +30,7 @@ L'objectif et de ne pas utiliser composer sur l'instance directement, mais de pa
 - le pousser sur la branche master de votre instance gandi. Pour savoir quoi mettre à la place de ... : cf. section "deployer avec git" sur la page de configuration du *site*.
   - `git remote add gandi git+ssh ...`
   - `git push gandi main:master` (a priori, gandi s'attend d'avoir une branche master, pas main, à confirmer avec eux)
-- nettoyer le vhost (supprime notamment le index.html)
+- nettoyer le vhost (supprime notamment le index.html) - /!\ uniquement pour une première installation
   - `ssh ... clean ...`
 - lancer le deployement
   - `ssh ... deploy ...`
@@ -51,7 +51,7 @@ Si besoin d'ajouter d'autre fonctionnalités, le faire depuis le repos local :
 - tester en local (cf *tester en local* plus bas)
 - commit
 - push
-- deploy
+- deploy (/!\ sans clean)
 
 ### Reconstruire ce repos
 
