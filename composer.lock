@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ad20a54e0942205226bfd257f7cfeef",
+    "content-hash": "83031006970976664465bb07feb9dcf5",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -178,6 +178,66 @@
                 "source": "https://github.com/clarkwinkelmann/flarum-ext-author-change"
             },
             "time": "2022-04-01T16:14:52+00:00"
+        },
+        {
+            "name": "clarkwinkelmann/flarum-ext-who-read",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/flarum-ext-who-read.git",
+                "reference": "d93e4df0fd38f94843921a927eddb51e9c69946f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-who-read/zipball/d93e4df0fd38f94843921a927eddb51e9c69946f",
+                "reference": "d93e4df0fd38f94843921a927eddb51e9c69946f",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Who read",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-book-reader",
+                        "backgroundColor": "#684ba6",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/23066"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\WhoRead\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Make read status visible to selected groups",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/23066",
+                "issues": "https://github.com/clarkwinkelmann/flarum-ext-who-read/issues",
+                "source": "https://github.com/clarkwinkelmann/flarum-ext-who-read"
+            },
+            "time": "2021-07-28T16:51:17+00:00"
         },
         {
             "name": "components/font-awesome",
@@ -2631,6 +2691,286 @@
                 }
             ],
             "time": "2022-07-12T21:30:03+00:00"
+        },
+        {
+            "name": "fof/doorman",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/doorman.git",
+                "reference": "535771de73ab575adfc5f0b412aa11bcf1664fb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/doorman/zipball/535771de73ab575adfc5f0b412aa11bcf1664fb1",
+                "reference": "535771de73ab575adfc5f0b412aa11bcf1664fb1",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "replace": {
+                "reflar/doorman": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Doorman",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-door-closed",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#FFF"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/17845"
+                },
+                "optional-dependencies": [
+                    "zerosonesfun/direct-links"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Doorman\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Team Fof",
+                    "email": "team@friendsofflarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create invite codes for users to sign up and be assigned to a group",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/17845",
+                "issues": "https://github.com/FriendsOfFlarum/doorman/issues",
+                "source": "https://github.com/FriendsOfFlarum/doorman"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-04-08T09:16:19+00:00"
+        },
+        {
+            "name": "fof/drafts",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/drafts.git",
+                "reference": "2291ac07ebe7afaa1bf606d8116184d658277fcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/drafts/zipball/2291ac07ebe7afaa1bf606d8116184d658277fcf",
+                "reference": "2291ac07ebe7afaa1bf606d8116184d658277fcf",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Drafts",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-edit",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    },
+                    "optional-dependencies": [
+                        "fof/byobu"
+                    ]
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/20957"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Drafts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FoF Team",
+                    "email": "team@friendsofflarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Allow users to create post and discussion drafts",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Friends of Flarum",
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/20957",
+                "issues": "https://github.com/FriendsOfFlarum/drafts/issues",
+                "source": "https://github.com/FriendsOfFlarum/drafts"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-05-18T21:16:09+00:00"
+        },
+        {
+            "name": "fof/merge-discussions",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/merge-discussions.git",
+                "reference": "ffb9ac7a9ad952a23603c18522f0b0d9fda67a5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/merge-discussions/zipball/ffb9ac7a9ad952a23603c18522f0b0d9fda67a5c",
+                "reference": "ffb9ac7a9ad952a23603c18522f0b0d9fda67a5c",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.3.1"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Merge Discussions",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-code-branch fa-flip-vertical",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/19460"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\MergeDiscussions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "IanM",
+                    "email": "ian@blomstra.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Merge two or more discussions into one",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/19460",
+                "issues": "https://github.com/FriendsOfFlarum/merge-discussions/issues",
+                "source": "https://github.com/FriendsOfFlarum/merge-discussions"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-08-04T10:55:42+00:00"
+        },
+        {
+            "name": "fof/split",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/split.git",
+                "reference": "efc5a3b9ca47643d64cd7dfb6033a01adbef2340"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/split/zipball/efc5a3b9ca47643d64cd7dfb6033a01adbef2340",
+                "reference": "efc5a3b9ca47643d64cd7dfb6033a01adbef2340",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Split",
+                    "category": "feature",
+                    "icon": {
+                        "name": "fas fa-code-branch",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/1903"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Split\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "http://luceos.com"
+                }
+            ],
+            "description": "Separate posts from one discussion into its own, splits discussions.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum",
+                "split"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/1903",
+                "issues": "https://github.com/FriendsOfFlarum/split/issues",
+                "source": "https://github.com/FriendsOfFlarum/split"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2022-07-01T11:09:44+00:00"
         },
         {
             "name": "fof/upload",
