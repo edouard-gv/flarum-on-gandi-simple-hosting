@@ -8,10 +8,10 @@
 
 ## Sur ce repos
 Ce repos permet d'installer Flarum sur une instance Gandi Simple Hosting configurée en **php 7.4** (testé avec 7.4.25). Elle contient en outre les fonctionnalités supplémentaire suivantes :
-- if/flajax (FlaJax 0.1.4, MathJax extension for flarum)
-- fof/upload (FoF Upload 1.2.3, The file upload extension for the Flarum forum with insane intelligence.)
-- clarkwinkelmann/flarum-ext-group-invitation (Group Invitation 1.0.1, Invite users into groups via links)
-- flarum-lang/french (le package de langue Français 3.9.0)
+- if/flajax (MathJax extension for flarum)
+- fof/upload (FoF Upload, The file upload extension for the Flarum forum with insane intelligence.)
+- clarkwinkelmann/flarum-ext-group-invitation (Group Invitation, Invite users into groups via links)
+- flarum-lang/french (le package de langue Français)
 
 **Attention ! Les tests dans d'autres version de php (8.0) n'ont pas été concluant et l'instance était très instable (plantage BDD + Apache à la connexion d'un utiisateur non admin ou non validé).**
 
