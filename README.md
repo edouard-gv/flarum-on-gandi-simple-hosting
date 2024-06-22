@@ -37,8 +37,8 @@ L'objectif et de ne pas utiliser composer sur l'instance directement, mais de pa
 
 ### Reprendre l'installation classique
 
-- créer un utilisateur et une base de données associé via phpmyadmin avec droit d'accès uniquement depuis localhost
-- lance rla configuration en allant sur la home page, y configurer les accès base de données
+- créer un utilisateur et une base de données associée via phpmyadmin avec droit d'accès uniquement depuis localhost
+- lancer la configuration en allant sur la home page, y configurer les accès base de données
 - configurer les mails en mode smtp commme indiqué dans la doc [gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/smtp.html) mais **/!\ en explicitant le serveur smtp**, ne pas mettre locahost (cf configuration Node JS par exemple).
 
 ### Pour aller plus loin
@@ -52,6 +52,7 @@ Si besoin d'ajouter d'autre fonctionnalités, le faire depuis le repos local :
 - commit
 - push
 - deploy (/!\ sans clean)
+- Question ouverte : faut-il lancer `php flarum migrate` puis `php flarum cache:clear` sur le serveur si l'on souhaite juste monter de version, comme indiqué dans la doc Flarum ? (Dans ce cas, installer puis utiliser l'extension `extension manager` permet de ne plus se poser la question)
 
 ### Reconstruire ce repos
 
