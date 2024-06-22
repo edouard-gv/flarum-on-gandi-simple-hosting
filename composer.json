@@ -28,6 +28,7 @@
         "flarum/bbcode": "*",
         "flarum/core": "^1.8",
         "flarum/emoji": "*",
+        "flarum/extension-manager": "*",
         "flarum/flags": "*",
         "flarum/lang-english": "*",
         "flarum/likes": "*",
