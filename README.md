@@ -8,10 +8,12 @@
 
 ## Sur ce repos
 Ce repos permet d'installer Flarum sur une instance Gandi Simple Hosting configurée en **php 7.4** (testé avec 7.4.25). Elle contient en outre les fonctionnalités supplémentaire suivantes :
+- extension manager
 - if/flajax (MathJax extension for flarum)
 - fof/upload (FoF Upload, The file upload extension for the Flarum forum with insane intelligence.)
 - clarkwinkelmann/flarum-ext-group-invitation (Group Invitation, Invite users into groups via links)
 - flarum-lang/french (le package de langue Français)
+- who-read doorman drafts merge-discussions split
 
 **Attention ! Les tests dans d'autres version de php (8.0) n'ont pas été concluant et l'instance était très instable (plantage BDD + Apache à la connexion d'un utiisateur non admin ou non validé).**
 
@@ -52,7 +54,7 @@ Si besoin d'ajouter d'autre fonctionnalités, le faire depuis le repos local :
 - commit
 - push
 - deploy (/!\ sans clean)
-- Question ouverte : faut-il lancer `php flarum migrate` puis `php flarum cache:clear` sur le serveur si l'on souhaite juste monter de version, comme indiqué dans la doc Flarum ? (Dans ce cas, installer puis utiliser l'extension `extension manager` permet de ne plus se poser la question)
+- a priori, pas besoin de lancer `php flarum migrate` puis `php flarum cache:clear` sur le serveur si l'on souhaite juste monter de version, contrairement à ce qui est indiqué dans la doc Flarum. (En outre, utiliser l'extension `extension manager` permet de ne plus se poser la question)
 
 ### Reconstruire ce repos
 
